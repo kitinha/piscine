@@ -1,40 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: inguille <inguille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/03 19:55:44 by inguille          #+#    #+#             */
-/*   Updated: 2025/03/05 17:50:44 by inguille         ###   ########.fr       */
+/*   Created: 2025/03/04 20:45:53 by inguille          #+#    #+#             */
+/*   Updated: 2025/03/05 18:48:51 by inguille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+char	*ft_strcat(char *dest, char *src)
 {
 	int	i;
+	int	j;
 
 	i = 0;
-	while (s1[i] != '\0' && s2[i] != '\0')
-	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
+	j = 0;
+	while (dest[i] != '\0')
 		i++;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-	return (s1[i] - s2[i]);
+	dest[i] = '\0';
+	return (dest);
 }
 /*
 #include <stdio.h>
 int main(void)
 {
-	char s1[] = "kiti";
-	char s2[] = "kitinha";
-	printf("%d\n", ft_strcmp(s1, s2));
-	char s3[] = "kiti";
-	char s4[] = "kiti";
-	printf("%d\n", ft_strcmp(s3, s4));
-	char s5[] = "kitinha";
-	char s6[] = "kiti";
-	printf("%d\n", ft_strcmp(s5, s6));
+	char dest[40] = "hello";
+	char src[] = ", how are you?";
+	printf("%s\n", ft_strcat(dest , src));
+	char dest1[40] = "hello";
+	char src2[] = "hello";
+	printf("%s\n", ft_strcat(dest1 , src2));
+	char dest3[40] = "helloo";
+	char src4[] = " hello";
+	printf("%s\n", ft_strcat(dest3 , src4));
 }
 */

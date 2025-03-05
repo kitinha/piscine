@@ -6,7 +6,7 @@
 /*   By: inguille <inguille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 23:37:38 by inguille          #+#    #+#             */
-/*   Updated: 2025/03/04 20:40:06 by inguille         ###   ########.fr       */
+/*   Updated: 2025/03/05 17:55:42 by inguille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,24 +17,24 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	i = 0;
 	while (i < n)
 	{
-		if (s1[i] != s2[i] || s1[i] == '\0')
+		if (s1[i] != s2[i])
 		{
 			return (s1[i] - s2[i]);
 		}
 		i++;
 	}
-	return (0);
+	return (s1[i] - s2[i]);
 }
 /*
 #include <stdio.h>
 int main(void)
 {
-	unsigned int n = 5;
-	char s1[] = "kitis";
-	char s2[] = "kitanhi";
+	unsigned int n = 6;
+	char s1[] = "hello";
+	char s2[] = "hel";
 	printf("%d\n", ft_strncmp(s1, s2, n));
 	char s3[] = "kiti";
-	char s4[] = "kiti";
+	char s4[] = "kitii";
 	printf("%d\n", ft_strncmp(s3, s4, n));
 	char s5[] = "kitii";
 	char s6[] = "kiti";
