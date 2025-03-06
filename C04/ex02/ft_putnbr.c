@@ -5,13 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: inguille <inguille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/06 14:35:27 by inguille          #+#    #+#             */
-/*   Updated: 2025/03/06 14:54:19 by inguille         ###   ########.fr       */
+/*   Created: 2025/03/05 21:12:50 by inguille          #+#    #+#             */
+/*   Updated: 2025/03/06 18:05:16 by inguille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
 void	ft_putnbr(int nb)
 {
-	write(1, &nb, 1);
+	char *str[] = nb;
+	write (1, &nb, );
+}
+int main()
+{
+	int nb = 42;
+	ft_putnbr(nb);
 }

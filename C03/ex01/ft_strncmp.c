@@ -6,7 +6,7 @@
 /*   By: inguille <inguille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 23:37:38 by inguille          #+#    #+#             */
-/*   Updated: 2025/03/05 17:55:42 by inguille         ###   ########.fr       */
+/*   Updated: 2025/03/06 19:22:16 by inguille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,11 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 		{
 			return (s1[i] - s2[i]);
 		}
+		i++;
+	}
+	while (i < n)
+	{
+		dest[i] = '\0';
 		i++;
 	}
 	return (s1[i] - s2[i]);
