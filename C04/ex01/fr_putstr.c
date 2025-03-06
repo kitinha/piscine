@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   fr_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: inguille <inguille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/04 00:09:31 by inguille          #+#    #+#             */
-/*   Updated: 2025/03/06 14:30:31 by inguille         ###   ########.fr       */
+/*   Created: 2025/03/06 14:31:56 by inguille          #+#    #+#             */
+/*   Updated: 2025/03/06 14:34:22 by inguille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include <unistd.h>
+void	ft_putstr(char *str)
 {
 	int	i;
-
 	i = 0;
 	while (str[i] != '/0')
+	{
+		write (1, &str[i], 1);
 		i++;
-	return (i);
+	}
 }
 
-#include <stdio.h>
-int	main()
+int main()
 {
-	char str[] = "kitinha";
-	printf("%d", ft_strlen(str));
+	ft_putstr("kitinha");
 }

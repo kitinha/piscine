@@ -1,28 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: inguille <inguille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/04 00:09:31 by inguille          #+#    #+#             */
-/*   Updated: 2025/03/06 14:30:31 by inguille         ###   ########.fr       */
+/*   Created: 2025/03/06 14:35:27 by inguille          #+#    #+#             */
+/*   Updated: 2025/03/06 14:54:19 by inguille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include <unistd.h>
+void	ft_putnbr(int nb)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '/0')
-		i++;
-	return (i);
-}
-
-#include <stdio.h>
-int	main()
-{
-	char str[] = "kitinha";
-	printf("%d", ft_strlen(str));
+	write(1, &nb, 1);
 }
