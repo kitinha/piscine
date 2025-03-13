@@ -1,36 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_params.c                                  :+:      :+:    :+:   */
+/*   ft_rev_params.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: inguille <inguille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/12 21:07:11 by inguille          #+#    #+#             */
-/*   Updated: 2025/03/13 15:59:07 by inguille         ###   ########.fr       */
+/*   Created: 2025/03/13 15:59:40 by inguille          #+#    #+#             */
+/*   Updated: 2025/03/13 18:00:01 by inguille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_strlen(char *str)
-{
-	int	y;
-
-	y = 0;
-	while (str[y] != '\0')
-		y++;
-	return (y);
-}
-
 int	main(int argc, char **argv)
 {
-	int	y;
+	int	i;
+	
 
-	y = 1;
-	while (y < argc)
-	{
-		write(1, argv[y], ft_strlen(argv[y]));
-		write(1, "\n", 1);
-		y++;
-	}
+
 }
