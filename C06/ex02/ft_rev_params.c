@@ -6,12 +6,11 @@
 /*   By: inguille <inguille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 15:59:40 by inguille          #+#    #+#             */
-/*   Updated: 2025/03/15 17:47:36 by inguille         ###   ########.fr       */
+/*   Updated: 2025/03/16 14:01:34 by inguille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-
 
 int	main(int argc, char **argv)
 {
@@ -30,5 +29,4 @@ int	main(int argc, char **argv)
 		write(1, "\n", 1);
 		i--;
 	}
-	return (0);
 }

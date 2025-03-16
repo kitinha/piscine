@@ -6,7 +6,7 @@
 /*   By: inguille <inguille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 21:04:14 by inguille          #+#    #+#             */
-/*   Updated: 2025/03/13 15:59:12 by inguille         ###   ########.fr       */
+/*   Updated: 2025/03/16 13:57:12 by inguille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,9 @@ char	ft_putstr(char *str)
 
 int	main(int argc, char **argv)
 {
-	int	i;
-
-	write (1, argv[0], ft_putstr(argv[i]));
-	write (1, "\n", 1);
+	if (argc == 1)
+	{
+		write (1, argv[0], ft_putstr(argv[0]));	
+		write (1, "\n", 1);
+	}
 }

@@ -6,7 +6,7 @@
 /*   By: inguille <inguille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 21:07:11 by inguille          #+#    #+#             */
-/*   Updated: 2025/03/13 15:59:07 by inguille         ###   ########.fr       */
+/*   Updated: 2025/03/16 14:11:54 by inguille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,12 @@ int	main(int argc, char **argv)
 		y++;
 	}
 }
+
+int main(int argc, char **argv)
+{
+	int	i;
+
+	i = 0;
+}
+
+
